@@ -42,7 +42,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logReqRes("log.txt"));
 
 app.use(session({
-  secret: 'your-secret-key',  // Replace with a secure key
+  secret: '***REMOVED***',  // Replace with a secure key
   resave: false,
   saveUninitialized: true
 }));
