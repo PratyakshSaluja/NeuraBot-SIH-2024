@@ -39,7 +39,7 @@ app.use(session({
   secret: '***REMOVED***',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true }
+  cookie: { secure: false }
 }));
 app.use(passport.initialize());
 app.use(passport.session());
