@@ -10,6 +10,7 @@ import os
 from streamlit_lottie import st_lottie
 import requests
 
+
 # Groq API key
 GROQ_API_KEY = "***REMOVED***"
 groq_client = Groq(api_key=GROQ_API_KEY)
