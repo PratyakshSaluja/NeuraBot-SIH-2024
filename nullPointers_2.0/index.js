@@ -40,10 +40,13 @@ app.use(session({
   secret: '***REMOVED***',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: false },
-  secure: false,
-  maxAge: null
+  cookie: { 
+    secure: true,
+    httpOnly: true,
+    maxAge: 3600000
+  }
 }));
+
 app.use(passport.initialize());
 app.use(passport.session());
 
