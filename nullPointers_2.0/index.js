@@ -40,8 +40,8 @@ app.use(session({
   secret: '***REMOVED***',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true },
-  secure: true,
+  cookie: { secure: false },
+  secure: false,
   maxAge: null
 }));
 app.use(passport.initialize());
